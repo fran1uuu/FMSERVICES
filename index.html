@@ -4,36 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FM Services</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header / Navigation -->
   <header>
     <div class="logo">FM<span>Services</span></div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
+  <!-- Hero Section -->
+  <section id="hero" class="hero fade-in">
+    <div class="hero-content">
       <h1>Elite Solutions for Visionaries</h1>
       <p>Crafting discreet, impactful strategies for those who lead in silence.</p>
-      <a href="services.html" class="cta-btn">Discover Our Services</a>
-    </section>
+      <a href="#services" class="cta-btn">Discover Our Services</a>
+    </div>
+  </section>
 
-    <section class="about">
-      <h2>About Us</h2>
-      <p>FM Services delivers high-end professional solutions tailored for individuals and businesses who value precision, confidentiality, and results.</p>
-    </section>
-  </main>
+  <!-- About Section -->
+  <section id="about" class="about fade-in">
+    <h2>About Us</h2>
+    <p>
+      FM Services delivers high-end professional solutions tailored for individuals and businesses 
+      who value precision, confidentiality, and results. Our approach is discreet yet impactful, 
+      designed to elevate your presence in every dimension.
+    </p>
+  </section>
 
+  <!-- Services Intro Section -->
+  <section id="services" class="services fade-in">
+    <h2>Our Services</h2>
+    <p>We provide tailored services that combine strategy, innovation, and discretion to give our clients a decisive edge.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact fade-in">
+    <h2>Contact</h2>
+    <p>Get in touch with us for a private consultation.</p>
+    <a href="contact.html" class="cta-btn">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 FM Services. All rights reserved.</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
-
-
