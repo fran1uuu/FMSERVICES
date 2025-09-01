@@ -3,8 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
 body {
   background-color: #121212;
   color: #e0e0e0;
@@ -16,70 +17,133 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 50px;
   border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  z-index: 100;
 }
+
 header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
+
 header .logo span {
   color: #888;
+  font-weight: 300;
 }
+
 header nav a {
   color: #bbb;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 25px;
+  transition: color 0.3s;
 }
+
 header nav a:hover {
   color: #fff;
 }
 
 /* Hero Section */
 .hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #333, #444);
+  padding: 0 20px;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
 }
-.hero h1 {
+
+.hero-content h1 {
   font-size: 3rem;
   margin-bottom: 20px;
 }
-.hero p {
+
+.hero-content p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  color: #ccc;
 }
-.hero .cta-btn {
-  padding: 10px 20px;
-  background-color: #555;
+
+.cta-btn {
+  padding: 12px 25px;
+  background-color: #333;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
 }
-.hero .cta-btn:hover {
-  background-color: #666;
+
+.cta-btn:hover {
+  background-color: #555;
+  color: #fff;
 }
 
 /* About Section */
-.about {
-  padding: 50px 20px;
+.about, .services, .contact {
+  padding: 80px 20px;
   text-align: center;
+  max-width: 900px;
+  margin: auto;
 }
-.about h2 {
+
+.about h2, .services h2, .contact h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  font-weight: 500;
 }
-.about p {
+
+.about p, .services p, .contact p {
   font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto;
+  color: #ccc;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #222;
+  background-color: #1a1a1a;
+  color: #888;
+  font-size: 0.9rem;
 }
 
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  header nav {
+    margin-top: 15px;
+  }
+
+  header nav a {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
