@@ -146,5 +146,18 @@ footer {
     padding: 1.5rem;
   }
 }
+.hero {
+  ...
+  background: url('hero.png') center/cover no-repeat;
+  ...
+}
+
+.about {
+  ...
+  background: url('aboutme.png') center/cover no-repeat;
+  ...
+}
+
+
 
 
