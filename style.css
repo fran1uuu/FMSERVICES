@@ -104,6 +104,14 @@ header nav a:hover {
   margin: auto;
 }
 
+/* CONTACT */
+.contact {
+ padding: 80px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
 /* Headings */
 h2 {
   font-size: 2rem;
@@ -147,3 +155,4 @@ footer {
   border-radius: 5px;
   font-weight: 500;
   transition: background 0.3s,
+
