@@ -4,63 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FM Services</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Header / Navigation -->
-  <header>
-    <div class="logo">FM<span>Services</span></div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="hero" class="hero fade-in">
-    <div class="hero-content">
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <img src="images/hero.png" alt="Elite Solutions for Visionaries" class="hero-img">
+    <div class="hero-text">
       <h1>Elite Solutions for Visionaries</h1>
-      <p>Crafting discreet, impactful strategies for those who lead in silence.</p>
-      <a href="#services" class="cta-btn">Discover My Services</a>
+      <p>Professional, cold, minimalist consulting for high-impact results.</p>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- ABOUT ME SECTION -->
   <section id="about" class="about fade-in">
     <h2>About Me</h2>
-    <p>
-      FM Services delivers high-end professional solutions tailored for individuals and businesses 
-      who value precision, confidentiality, and results. Our approach is discreet yet impactful, 
-      designed to elevate your presence in every dimension.
-    </p>
+    <div class="about-container">
+      <img src="images/aboutme.png" alt="About FM Services" class="section-img">
+      <p>
+        FM Services delivers high-end professional solutions tailored for individuals and businesses 
+        who value precision, confidentiality, and results. Expertise in consulting, editing, and strategy.
+      </p>
+    </div>
   </section>
 
-  <!-- Services Intro Section -->
+  <!-- SERVICES SECTION -->
   <section id="services" class="services fade-in">
     <h2>My Services</h2>
-    <p>We provide tailored services that combine strategy, innovation, and discretion to give our clients a decisive edge.</p>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Consulting</h3>
+        <p>Strategic guidance and high-level planning for elite clients.</p>
+      </div>
+      <div class="service-card">
+        <h3>Editing & Proofreading</h3>
+        <p>Precision editing and refinement to ensure professional quality.</p>
+      </div>
+      <div class="service-card">
+        <h3>Custom Solutions</h3>
+        <p>Tailored solutions designed for maximum impact and efficiency.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- CONTACT SECTION -->
   <section id="contact" class="contact fade-in">
     <h2>Contact</h2>
-    <p>Get in touch with me for a private consultation.</p>
-    <a href="contact.html" class="cta-btn">Contact Us</a>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 FM Services. All rights reserved.</p>
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
