@@ -106,10 +106,40 @@ header nav a:hover {
 
 /* CONTACT */
 .contact {
- padding: 80px 20px;
+  padding: 50px 20px;
   text-align: center;
-  max-width: 900px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
   margin: auto;
+}
+
+.contact input, .contact textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #f5d700;
+  background: #1c1c1c;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.contact button {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background: #f5d700;
+  color: #121212;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background: #d4b700;
 }
 
 /* Headings */
@@ -155,4 +185,5 @@ footer {
   border-radius: 5px;
   font-weight: 500;
   transition: background 0.3s,
+
 
