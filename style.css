@@ -31,19 +31,8 @@ header .logo {
 }
 
 header .logo span {
-  color: #888;
+  color: #d4af37; /* subtle gold accent */
   font-weight: 300;
-}
-
-header nav a {
-  color: #bbb;
-  text-decoration: none;
-  margin-left: 25px;
-  transition: color 0.3s;
-}
-
-header nav a:hover {
-  color: #fff;
 }
 
 /* Hero Section */
@@ -53,51 +42,66 @@ header nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
-  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  background: url('hero.png') center/cover no-repeat;
+  position: relative;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.hero:hover {
+  transform: scale(1.02);
+  filter: brightness(0.95);
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  color: #ccc;
-}
-
-.cta-btn {
-  padding: 12px 25px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 500;
-  transition: background 0.3s, color 0.3s;
-}
-
-.cta-btn:hover {
-  background-color: #555;
-  color: #fff;
+.hero-text {
+  color: #f5f5f5;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 2rem;
+  border-radius: 12px;
 }
 
 /* About Section */
-.about, .services, .contact {
+.about {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('aboutme.png') center/cover no-repeat;
+  position: relative;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.about:hover {
+  transform: scale(1.01);
+  filter: brightness(0.95);
+}
+
+.about-text {
+  color: #f5f5f5;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 800px;
+}
+
+/* Services Section */
+.services {
   padding: 80px 20px;
   text-align: center;
   max-width: 900px;
   margin: auto;
 }
 
-.about h2, .services h2, .contact h2 {
+/* Headings */
+h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   font-weight: 500;
+  color: #d4af37; /* subtle gold accent */
 }
 
-.about p, .services p, .contact p {
+p {
   font-size: 1.1rem;
   color: #ccc;
 }
@@ -130,24 +134,17 @@ footer {
     padding: 20px;
   }
 
-  header nav {
-    margin-top: 15px;
-  }
-
-  header nav a {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .hero-content h1 {
+  .hero-text h1 {
     font-size: 2.2rem;
   }
 
-  .hero-content p {
+  .hero-text p {
     font-size: 1rem;
   }
+
+  .about-text {
+    padding: 1.5rem;
+  }
 }
-
-
 
 
